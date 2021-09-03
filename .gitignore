@@ -1,1 +1,5 @@
+#  .gitignore가 같은 폴더에 
 /node_modules
+
+# 다른 폴더 안에 있을때 별둘은 모든 폴더를 뒤져서 있으면 제외하라는 의미
+**node_modules

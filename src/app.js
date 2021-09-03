@@ -13,3 +13,5 @@ app.use("/", home) //루트로 들어오면 home으러 보냄
 
 
 module.exports = app;
+
+// src폴더 안에 모두 넣었늘 경우 PS D:\node-login\src> npm start
