@@ -27,3 +27,9 @@ module.exports = app;
 // PS D:\node-login> git add .
 // PS D:\node-login> git commit -m "소스코드를 src 안으로 넣음"
 // PS D:\node-login> git push origin master
+
+// 소스코드를 app안으로 하고, src폴더 활용
+
+// PS D:\node-login> git add .
+// PS D:\node-login> git commit -m "폴더구조를 app과 src를 활용 하여 재배치"
+// PS D:\node-login> git push origin master
