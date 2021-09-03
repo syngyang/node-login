@@ -2,11 +2,11 @@
 
 const express = require('express'); // 모듈
 const app = express();
-const home = require("./routes/home") // 라우팅
+const home = require("./src/routes/home") // 라우팅 - src폴더 속으로 넣었으면 추가
 
 
-// 엡 셋팅
-app.set("views", "./views");
+// 엡 셋팅 - src폴더 만들면, 앞에 추가 해줌
+app.set("views", "./src/views");
 app.set("view engine", "ejs");
 
 app.use("/", home) //루트로 들어오면 home으러 보냄
