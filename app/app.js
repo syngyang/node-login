@@ -13,7 +13,7 @@ app.use(express.static(`${__dirname}/src/public`));
 app.use(express.json());
 app.use(express.urlencoded({extended: true}))// To parse the incoming requests with JSON payloads
 
-app.use("/", home) //루트로 들어오면 home으러 보냄
+app.use("/", home) //루트로 들어오면 home으로 보냄
 
 
 module.exports = app;
