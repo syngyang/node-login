@@ -9,6 +9,9 @@ const home = require("./src/routes/home") // 라우팅 - src폴더 속으로 넣
 app.set("views", "./src/views");
 app.set("view engine", "ejs");
 
+app.use(express.static(`${__dirname}/src/public`))
+
+
 app.use("/", home) //루트로 들어오면 home으러 보냄
 
 
