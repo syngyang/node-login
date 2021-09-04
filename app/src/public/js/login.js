@@ -21,7 +21,15 @@ function login(){
         },
         body: JSON.stringify(req)
     }).then(res=>res.json())
-      //.then(data=> console.log(data))
-      .then(console.log(data))
+      .then(data=>{ //{success: true}, {success: false, msg: "로그인에 실패했습니다."}
+          if(data.success){
+              location.href = "/"
+          } else {
+              alert(data.msg)
+          }
+      })
+      .catch(err=>{
+          console.error(new Error("로그인 중 에러 발생"))// router의 post지우고 테스트
+      })
     
 }
