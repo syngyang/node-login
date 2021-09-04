@@ -1,4 +1,5 @@
 "use strict"
+const UserStorage = require("../../models/userStorage")
 
 const show = {
     home:(req, res)=> {
@@ -8,28 +9,26 @@ const show = {
              res.render("home/login")
            }
 }
-const users = {
-    id: ["yang","syng","wook"],
-    passwd: ["123","234","345"]
-}
 
 const process = {
     login: (req,res)=> {
         //console.log(req.body)
-        const id = req.body.id, passwd = req.body.passwd;
+        const id = req.body.id, 
+            passwd = req.body.passwd;
+        // const userStorage = new UserStorage(); 인스탄스화 안하고, 바로 static
+        const users = UserStorage.getUsers("id","passwd")
 
+        const response = {}
         if(users.id.includes(id)) {
             const idx = users.id.indexOf(id);
             if (users.passwd[idx]=== passwd) {
-                return res.json({
-                    success: true
-                })
+                response.success= true;
+                return res.json(response)
             }
         }
-        return res.json({
-            success: false,
-            msg: "로그인에 실패했습니다."
-        })
+        response.success = false;
+        response.msg = "로그인에 실패 했습니다."
+        return res.json(response)
     }
 }
 
