@@ -2,7 +2,7 @@
 
 const id = document.querySelector("#id");
 const passwd = document.querySelector("#passwd");
-const loginBtn = document.querySelector("#loginBtn");
+const loginBtn = document.querySelector("#login-btn");
 
 // 꼭 login.ejs의 script 연결에 defer 사용
 // console.log(id.value,passwd, loginBtn);
