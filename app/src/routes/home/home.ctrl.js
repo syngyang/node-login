@@ -20,7 +20,13 @@ const process = {
         // console.log(user.body.passwd)
         const response = user.loginUser()
         return res.json(response)// 클라이언트, 즉 login.js의 fetch의 then 에 던져 줌
+    },
+    register: (req,res)=> {
+        const user = new User(req.body);
+        const response = user.register()
+        return res.json(response)// 
     }
+
 }
 
 module.exports = {
