@@ -15,10 +15,10 @@ const show = {
 }
 
 const process = {
-    login: (req,res)=> {
+    login: async (req,res)=> {
         const user = new User(req.body);
         // console.log(user.body.passwd)
-        const response = user.loginUser()
+        const response = await user.loginUser()
         return res.json(response)// 클라이언트, 즉 login.js의 fetch의 then 에 던져 줌
     },
     register: (req,res)=> {

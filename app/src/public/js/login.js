@@ -8,7 +8,8 @@ const loginBtn = document.querySelector("#login-btn");
 // console.log(id.value,passwd, loginBtn);
 loginBtn.addEventListener("click", login)
 
-function login(){
+function login(event){
+    event.preventDefault();
     const req = {
         id:id.value,
         passwd:passwd.value,
