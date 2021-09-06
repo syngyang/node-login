@@ -1,1 +1,26 @@
-{"id":["yang","syng","wook","polyframe","park","kim"],"passwd":["123","234","345","123","123","1234"],"email":["yang@gmail.com","syng@gmail.com","wook@gmail.com","coworld@outlook.com","coworld@outlook.com","coworld@outlook.com"]}
+{
+	"id": [
+		"yang",
+		"syng",
+		"wook",
+		"polyframe",
+		"park",
+		"kim"
+	],
+	"passwd": [
+		"123",
+		"234",
+		"345",
+		"123",
+		"123",
+		"1234"
+	],
+	"email": [
+		"yang@gmail.com",
+		"syng@gmail.com",
+		"wook@gmail.com",
+		"coworld@outlook.com",
+		"coworld@outlook.com",
+		"coworld@outlook.com"
+	]
+}
